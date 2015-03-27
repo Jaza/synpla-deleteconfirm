@@ -1,0 +1,3 @@
+recursive-include synpla_deleteconfirm/static *
+include README.rst
+
