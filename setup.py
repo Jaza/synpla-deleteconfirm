@@ -11,7 +11,7 @@ __version__ = version_line.split('__version__ = ')[-1][1:][:-2]
 setuptools.setup(
     name="synpla-deleteconfirm",
     version=__version__,
-    url="https://github.com/Jaza/synpla-deleteconfirm"",
+    url="https://github.com/Jaza/synpla-deleteconfirm",
 
     author="Jeremy Epstein",
     author_email="jazepstein@gmail.com",
@@ -19,7 +19,8 @@ setuptools.setup(
     description="Delete confirm JS functionality for SynPla.",
     long_description=open('README.rst').read(),
 
-    py_modules=['synpla_deleteconfirm'],
+    packages=['synpla_deleteconfirm'],
+    include_package_data=True,
     zip_safe=False,
     platforms='any',
 
